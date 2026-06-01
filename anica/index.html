@@ -1,0 +1,1840 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Happy 17th Birthday Anica 💖</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  overflow-x:hidden;
+  min-height:100vh;
+  color:white;
+  position:relative;
+
+  background:
+  radial-gradient(circle at top,#5f143d 0%,#1b0013 45%,#090009 100%);
+}
+
+/* =========================
+BACKGROUND
+========================= */
+
+body::before{
+  content:'';
+  position:fixed;
+  width:450px;
+  height:450px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.06);
+  top:-120px;
+  left:-120px;
+  filter:blur(100px);
+  z-index:-2;
+}
+
+body::after{
+  content:'';
+  position:fixed;
+  width:400px;
+  height:400px;
+  border-radius:50%;
+  background:rgba(255,105,180,0.08);
+  bottom:-120px;
+  right:-120px;
+  filter:blur(100px);
+  z-index:-2;
+}
+
+/* =========================
+STARS
+========================= */
+
+.stars{
+  position:fixed;
+  inset:0;
+  z-index:-5;
+  overflow:hidden;
+}
+
+.star{
+  position:absolute;
+  width:3px;
+  height:3px;
+  background:white;
+  border-radius:50%;
+  animation:twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle{
+
+  0%,100%{
+    opacity:0.2;
+    transform:scale(1);
+  }
+
+  50%{
+    opacity:1;
+    transform:scale(2);
+  }
+}
+
+/* =========================
+LOGIN
+========================= */
+
+.login-screen{
+  position:fixed;
+  inset:0;
+  z-index:99999;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:20px;
+
+  background:
+  radial-gradient(circle at top,#5d143a 0%,#17000f 55%,#080008 100%);
+}
+
+.login-card{
+
+  width:100%;
+  max-width:390px;
+
+  background:rgba(255,255,255,0.08);
+
+  border:1px solid rgba(255,255,255,0.15);
+
+  backdrop-filter:blur(18px);
+
+  border-radius:30px;
+
+  padding:38px 28px;
+
+  text-align:center;
+
+  box-shadow:
+  0 15px 45px rgba(255,105,180,0.25);
+}
+
+.login-title{
+  font-size:2.1rem;
+  color:#ffb2d1;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.login-sub{
+  color:#ffe0ed;
+  font-size:0.95rem;
+  margin-bottom:25px;
+  line-height:1.7;
+}
+
+.input-group{
+  margin-bottom:15px;
+}
+
+.input-group input{
+
+  width:100%;
+
+  padding:14px 16px;
+
+  border:none;
+  outline:none;
+
+  border-radius:15px;
+
+  background:rgba(255,255,255,0.10);
+
+  border:1px solid rgba(255,255,255,0.15);
+
+  color:white;
+
+  font-size:0.95rem;
+}
+
+.input-group input::placeholder{
+  color:#ffd6e7;
+}
+
+.show-password{
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  margin-top:5px;
+  margin-bottom:20px;
+
+  font-size:0.88rem;
+
+  color:#ffe0ed;
+}
+
+.show-password input{
+  accent-color:#ff4f9a;
+}
+
+.login-btn{
+
+  width:100%;
+
+  border:none;
+
+  padding:14px;
+
+  border-radius:50px;
+
+  cursor:pointer;
+
+  font-size:1rem;
+  font-weight:600;
+
+  color:white;
+
+  background:
+  linear-gradient(
+    135deg,
+    #ff4f9a,
+    #ff8fc0
+  );
+
+  transition:0.3s;
+}
+
+.login-btn:hover{
+
+  transform:translateY(-2px);
+
+  box-shadow:
+  0 10px 25px rgba(255,105,180,0.4);
+}
+
+.error{
+  margin-top:15px;
+  color:#ffc7df;
+  font-size:0.9rem;
+}
+
+/* =========================
+MAIN SITE
+========================= */
+
+.main-site{
+  display:none;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:30px 18px;
+}
+
+.glass-card{
+
+  width:100%;
+  max-width:1250px;
+
+  background:rgba(255,255,255,0.08);
+
+  border:1px solid rgba(255,255,255,0.13);
+
+  backdrop-filter:blur(18px);
+
+  border-radius:35px;
+
+  padding:45px;
+
+  box-shadow:
+  0 15px 40px rgba(255,105,180,0.18);
+}
+
+.hero-layout{
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:60px;
+}
+
+.left-side{
+  flex:1;
+}
+
+.right-side{
+
+  width:330px;
+
+  display:flex;
+  justify-content:center;
+}
+
+/* =========================
+TEXT
+========================= */
+
+.main-title{
+
+  font-size:clamp(2.5rem,7vw,5rem);
+
+  line-height:1.1;
+
+  color:#ffb3d2;
+
+  margin-bottom:10px;
+
+  font-weight:800;
+
+  animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+
+  from{
+    text-shadow:
+    0 0 10px rgba(255,255,255,0.5),
+    0 0 25px rgba(255,105,180,0.3);
+  }
+
+  to{
+    text-shadow:
+    0 0 18px rgba(255,255,255,0.9),
+    0 0 40px rgba(255,105,180,0.7);
+  }
+}
+
+.name{
+
+  font-size:1.3rem;
+
+  color:#ffe0ed;
+
+  font-weight:500;
+
+  margin-bottom:25px;
+}
+
+.message{
+
+  background:rgba(255,255,255,0.07);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:22px;
+
+  padding:25px;
+
+  font-size:1rem;
+
+  line-height:2;
+
+  color:#fff4fa;
+
+  min-height:200px;
+}
+
+/* =========================
+BUTTONS
+========================= */
+
+.buttons{
+
+  margin-top:28px;
+
+  display:flex;
+  flex-wrap:wrap;
+
+  gap:14px;
+}
+
+.music-btn{
+
+  border:none;
+
+  padding:14px 22px;
+
+  border-radius:16px;
+
+  cursor:pointer;
+
+  color:white;
+
+  font-size:0.95rem;
+  font-weight:600;
+
+  background:
+  linear-gradient(
+    135deg,
+    #ff4f9a,
+    #ff85bb
+  );
+
+  transition:0.3s;
+
+  box-shadow:
+  0 10px 25px rgba(255,105,180,0.2);
+}
+
+.music-btn:hover{
+
+  transform:
+  translateY(-3px)
+  scale(1.03);
+
+  box-shadow:
+  0 12px 30px rgba(255,105,180,0.45);
+}
+
+/* =========================
+VISUALIZER
+========================= */
+
+.visualizer{
+
+  margin-top:35px;
+
+  display:flex;
+  align-items:flex-end;
+
+  gap:7px;
+
+  height:50px;
+}
+
+.bar{
+
+  width:7px;
+
+  border-radius:20px;
+
+  background:
+  linear-gradient(
+    to top,
+    #ff4f9a,
+    #ffd9e9
+  );
+
+  animation:music 1s infinite ease-in-out;
+}
+
+.bar:nth-child(2){
+  animation-delay:0.2s;
+}
+
+.bar:nth-child(3){
+  animation-delay:0.4s;
+}
+
+.bar:nth-child(4){
+  animation-delay:0.6s;
+}
+
+.bar:nth-child(5){
+  animation-delay:0.8s;
+}
+
+@keyframes music{
+
+  0%,100%{
+    height:12px;
+  }
+
+  50%{
+    height:45px;
+  }
+}
+
+/* =========================
+CAKE
+========================= */
+
+.cake-container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.cake{
+
+  position:relative;
+
+  width:250px;
+  height:160px;
+
+  border-radius:28px;
+
+  background:
+  linear-gradient(
+    to bottom,
+    #ffb4d2,
+    #ff76b2
+  );
+
+  box-shadow:
+  0 15px 35px rgba(255,105,180,0.35);
+
+  animation:floatCake 3s ease-in-out infinite;
+}
+
+@keyframes floatCake{
+
+  0%,100%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-12px);
+  }
+}
+
+.cake::before{
+
+  content:'';
+
+  position:absolute;
+
+  top:-22px;
+
+  width:100%;
+  height:28px;
+
+  border-radius:25px;
+
+  background:#fff3f8;
+}
+
+.candle{
+
+  position:absolute;
+
+  top:-82px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:18px;
+  height:78px;
+
+  border-radius:12px;
+
+  background:white;
+
+  cursor:pointer;
+}
+
+.flame{
+
+  position:absolute;
+
+  top:-22px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:26px;
+  height:26px;
+
+  border-radius:50%;
+
+  background:gold;
+
+  box-shadow:
+  0 0 25px gold;
+
+  animation:flicker 0.4s infinite alternate;
+}
+
+@keyframes flicker{
+
+  from{
+    transform:translateX(-50%) scale(1);
+  }
+
+  to{
+    transform:translateX(-50%) scale(1.15);
+  }
+}
+
+.cake-text{
+
+  margin-top:28px;
+
+  text-align:center;
+
+  line-height:1.8;
+
+  color:#ffe0ed;
+
+  font-size:1rem;
+}
+
+.song-status{
+
+  margin-top:10px;
+
+  color:#fff1f7;
+
+  text-align:center;
+
+  font-size:0.95rem;
+}
+
+/* =========================
+POPUPS
+========================= */
+
+.popup-gallery{
+
+  position:fixed;
+  inset:0;
+
+  display:none;
+  justify-content:center;
+  align-items:center;
+
+  padding:20px;
+
+  background:rgba(0,0,0,0.7);
+
+  backdrop-filter:blur(8px);
+
+  z-index:99999;
+}
+
+.popup-content{
+
+  width:100%;
+  max-width:900px;
+
+  max-height:90vh;
+
+  overflow-y:auto;
+
+  background:rgba(255,255,255,0.08);
+
+  border:1px solid rgba(255,255,255,0.12);
+
+  border-radius:25px;
+
+  padding:25px;
+
+  position:relative;
+}
+
+.gallery-title{
+
+  text-align:center;
+
+  margin-bottom:20px;
+
+  color:#ffd9e9;
+
+  font-size:1.8rem;
+}
+
+.close-btn{
+
+  position:absolute;
+
+  top:15px;
+  right:18px;
+
+  font-size:1.8rem;
+
+  cursor:pointer;
+
+  color:#ffd9e9;
+}
+
+.photos{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(180px,1fr));
+
+  gap:15px;
+}
+
+.photo-card{
+  overflow:hidden;
+  border-radius:18px;
+}
+
+.photo-card img{
+
+  width:100%;
+  height:240px;
+
+  object-fit:cover;
+
+  transition:0.4s;
+}
+
+.photo-card img:hover{
+  transform:scale(1.05);
+}
+
+/* =========================
+VIDEO FIXED SIZE
+========================= */
+
+video{
+
+  width:100%;
+
+  max-width:100%;
+
+  height:auto;
+
+  max-height:75vh;
+
+  display:block;
+
+  margin:auto;
+
+  border-radius:22px;
+
+  object-fit:contain;
+
+  background:black;
+
+  box-shadow:
+  0 10px 30px rgba(255,105,180,0.25);
+}
+
+/* VIDEO POPUP FIX */
+
+#videoPopup .popup-content{
+
+  width:100%;
+
+  max-width:950px;
+
+  padding:20px;
+
+  overflow:hidden;
+}
+
+/* MOBILE VIDEO FIX */
+
+@media(max-width:768px){
+
+  video{
+
+    max-height:60vh;
+
+    border-radius:18px;
+  }
+
+  #videoPopup .popup-content{
+
+    max-width:100%;
+
+    padding:15px;
+  }
+}
+
+.secret-message{
+
+  text-align:center;
+
+  line-height:2;
+
+  color:white;
+
+  font-size:1rem;
+}
+
+/* =========================
+GAME
+========================= */
+
+.game-content{
+  max-width:900px;
+}
+
+.game-ui{
+  text-align:center;
+}
+
+.game-score{
+  font-size:1.2rem;
+  margin-bottom:15px;
+  color:#ffe2ef;
+  font-weight:600;
+}
+
+#gameCanvas{
+
+  width:100%;
+  max-width:800px;
+
+  border-radius:25px;
+
+  border:2px solid rgba(255,255,255,0.15);
+
+  background:
+  linear-gradient(
+    to bottom,
+    #ff9bc7,
+    #ffd6ea
+  );
+
+  box-shadow:
+  0 15px 35px rgba(255,105,180,0.25);
+}
+
+.game-info{
+  margin:15px 0 20px;
+  color:#fff4fa;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+.footer{
+
+  text-align:center;
+
+  padding:20px;
+
+  color:#ffd9e9;
+
+  font-size:0.9rem;
+}
+
+/* =========================
+HEARTS
+========================= */
+
+.heart{
+
+  position:fixed;
+
+  top:-20px;
+
+  pointer-events:none;
+
+  z-index:999;
+
+  animation:fall linear forwards;
+}
+
+@keyframes fall{
+
+  to{
+
+    transform:
+    translateY(110vh)
+    rotate(360deg);
+
+    opacity:0;
+  }
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:950px){
+
+  .hero-layout{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .buttons{
+    justify-content:center;
+  }
+
+  .visualizer{
+    justify-content:center;
+  }
+
+  .right-side{
+    width:100%;
+    margin-top:20px;
+  }
+}
+
+@media(max-width:768px){
+
+  .glass-card{
+    padding:30px 20px;
+  }
+
+  .main-title{
+    font-size:2.8rem;
+  }
+
+  .music-btn{
+    width:100%;
+  }
+
+  .cake{
+    width:210px;
+    height:135px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- LOGIN -->
+
+<div class="login-screen" id="loginScreen">
+
+  <div class="login-card">
+
+    <h1 class="login-title">
+      Birthday Login 💖
+    </h1>
+
+    <div class="login-sub">
+      Enter the special birthday access ✨
+    </div>
+
+    <div class="input-group">
+      <input type="text" id="username" placeholder="Username">
+    </div>
+
+    <div class="input-group">
+      <input type="password" id="password" placeholder="Password">
+    </div>
+
+    <label class="show-password">
+      <input type="checkbox" onclick="togglePassword()">
+      Show Password 👀
+    </label>
+
+    <button class="login-btn" onclick="login()">
+      Enter Website ✨
+    </button>
+
+    <div class="error" id="errorMsg"></div>
+
+  </div>
+
+</div>
+
+<!-- MAIN SITE -->
+
+<div class="main-site" id="mainSite">
+
+<div class="stars" id="stars"></div>
+
+<section class="hero">
+
+<div class="glass-card">
+
+<div class="hero-layout">
+
+<!-- LEFT -->
+
+<div class="left-side">
+
+<h1 class="main-title">
+Happy 17th Birthday 💖
+</h1>
+
+<div class="name">
+Anica Ortazo Raymundo ✨
+</div>
+
+<div class="message" id="typewriter"></div>
+
+<div class="buttons">
+
+<button class="music-btn" onclick="toggleMusic()">
+🎵 Music
+</button>
+
+<button class="music-btn" onclick="openGallery()">
+📸 Memories
+</button>
+
+<button class="music-btn" onclick="openVideo()">
+🎥 Video
+</button>
+
+<button class="music-btn" onclick="openLetter()">
+💌 Message
+</button>
+
+<button class="music-btn" onclick="openFriendsMessage()">
+🥳 Friends Message
+</button>
+
+<button class="music-btn" onclick="openGame()">
+🎮 Flappy Anica
+</button>
+
+</div>
+
+<div class="visualizer">
+
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="right-side">
+
+<div class="cake-container">
+
+<div class="cake">
+
+<div class="candle" id="candle">
+
+<div class="flame" id="flame"></div>
+
+</div>
+
+</div>
+
+<div class="cake-text">
+🎂 Click the candle to play the birthday song
+</div>
+
+<div class="song-status" id="songStatus">
+✨ Candle is lit
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<div class="popup-gallery" id="popupGallery">
+
+<div class="popup-content">
+
+<span class="close-btn" onclick="closeGallery()">
+✖
+</span>
+
+<h2 class="gallery-title">
+📸 Beautiful Memories
+</h2>
+
+<div class="photos">
+
+<div class="photo-card"><img src="pic1.png.jpg"></div>
+<div class="photo-card"><img src="pic2.png.jpg"></div>
+<div class="photo-card"><img src="pic3.png.jpg"></div>
+<div class="photo-card"><img src="pic4.png.png"></div>
+<div class="photo-card"><img src="pic5.png.jpg"></div>
+<div class="photo-card"><img src="pic6.png.jpg"></div>
+<div class="photo-card"><img src="pic7.png.jpg"></div>
+<div class="photo-card"><img src="pic8.png.jpg"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- VIDEO -->
+
+<div class="popup-gallery" id="videoPopup">
+
+<div class="popup-content">
+
+<span class="close-btn" onclick="closeVideo()">
+✖
+</span>
+
+<h2 class="gallery-title">
+🎥 Special Birthday Video
+</h2>
+
+<video id="birthdayVideo" controls>
+
+<source src="anicavideo.mp4" type="video/mp4">
+
+</video>
+
+</div>
+
+</div>
+
+<!-- LETTER -->
+
+<div class="popup-gallery" id="letterPopup">
+
+<div class="popup-content" style="max-width:600px;">
+
+<span class="close-btn" onclick="closeLetter()">
+✖
+</span>
+
+<h2 class="gallery-title">
+💌 Secret Message
+</h2>
+
+<div class="secret-message" id="secretTypewriter"></div>
+
+</div>
+
+</div>
+
+<!-- FRIENDS -->
+
+<div class="popup-gallery" id="friendsPopup">
+
+<div class="popup-content" style="max-width:700px;">
+
+<span class="close-btn" onclick="closeFriendsMessage()">
+✖
+</span>
+
+<h2 class="gallery-title">
+🥳 Birthday Messages From Friends
+</h2>
+
+<div class="secret-message" style="text-align:left; line-height:2;">
+
+<p>
+💖 <b>Jah:</b><br>
+HAPPY 17TH BIRTHDAY, IKAYYYYYY!!! 
+
+Today is the start of your year. I just wanted to tell you how special you are and how much you mean to everyone who knows you. You deserve all the happiness this year can bring. I hope you find joy in things, May you be brave enough to try things even if they scare you, make choices that feel right for you. Surround yourself with people who doesn’t make u question your worth and will surely feel that you are loved. Don't be afraid to chase things that excite u. Keep being curious about the world and, about yourself. Take time to appreciate who you are now. U are perfect the way you are. You have a lot to be proud of, and i am proud of what you’ve achieved. Love u, niks!
+</p>
+
+<br>
+
+<p>
+🌸 <b>Pai:</b><br>
+Happy birthday ma  🎈🎂🥳  enjoy your day and mag-aaral  mabuti huwag magpasaway and  lagi  ka lang mga masaya wag lage moody heheheheh enjoy your  day 😘🎈
+</p>
+
+<br>
+
+<p>
+🎂 <b>Rayvee:</b><br>
+Happy Birthday to the Girl Who Makes the World Softer na panget 😭 
+
+Happy birthday. Today isn’t just another day on the calendar. It’s the day the world got a little kinder, a little brighter, and a lot more beautiful because you were born into it. 
+</p>
+
+<br>
+
+<p>
+💙 <b>Matt:</b><br>
+Happy bday, nics. Enjoy ur new journey as u turning 17 na and next year will be the year na things will get serious. Focus on ur acads para makasama ka sa amin sa TCU. un lang
+
+</div>
+
+</div>
+
+</div>
+
+<!-- GAME -->
+
+<div class="popup-gallery" id="gamePopup">
+
+<div class="popup-content game-content">
+
+<span class="close-btn" onclick="closeGame()">
+✖
+</span>
+
+<h2 class="gallery-title">
+🎮 Flappy Anica
+</h2>
+
+<div class="game-ui">
+
+<div class="game-score">
+Score: <span id="score">0</span>
+</div>
+
+<canvas id="gameCanvas" width="800" height="450"></canvas>
+
+<div class="game-info">
+💖 CLICK / SPACE TO FLY 💖
+</div>
+
+<button class="music-btn" onclick="startGame()">
+▶ Start Game
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+Made with ❤️ for Anica's 17th Birthday
+</div>
+
+</div>
+
+<!-- AUDIO -->
+
+<audio id="bgMusic" loop>
+<source src="copilot.mp3.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="birthdaySong">
+<source src="sound.mp3.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+/* =========================
+LOGIN
+========================= */
+
+function login(){
+
+const user =
+document.getElementById('username').value;
+
+const pass =
+document.getElementById('password').value;
+
+if(
+user === 'Anica Ortazo Raymundo'
+&&
+pass === 'Anica17th'
+){
+
+document
+.getElementById('loginScreen')
+.style.display = 'none';
+
+document
+.getElementById('mainSite')
+.style.display = 'block';
+
+music.play();
+
+typeWriter();
+}
+
+else{
+
+document
+.getElementById('errorMsg')
+.innerHTML =
+'❌ Incorrect username or password';
+}
+}
+
+/* =========================
+PASSWORD
+========================= */
+
+function togglePassword(){
+
+const password =
+document.getElementById('password');
+
+password.type =
+password.type === 'password'
+? 'text'
+: 'password';
+}
+
+/* =========================
+MUSIC
+========================= */
+
+const music =
+document.getElementById('bgMusic');
+
+function toggleMusic(){
+
+if(music.paused){
+
+music.play();
+}
+
+else{
+
+music.pause();
+}
+}
+
+/* =========================
+TYPEWRITER
+========================= */
+
+const message = `
+Happy 17th Birthday, Anica! 💕
+Today is all about celebrating the amazing, beautiful, and kind person that you are.
+May your heart always be filled with happiness, your smile continue to brighten everyone around you, and your dreams slowly turn into reality one by one.
+Keep shining, keep believing in yourself, and never forget how truly special and wonderful you are ✨🌸
+`;
+
+let i = 0;
+
+function typeWriter(){
+
+if(i < message.length){
+
+document
+.getElementById('typewriter')
+.innerHTML += message.charAt(i);
+
+i++;
+
+setTimeout(typeWriter,35);
+}
+}
+
+/* =========================
+LETTER
+========================= */
+
+const secretMessage = `
+Hi Anica 💖, It's me your Kuya Al, I just want to say
+You deserve all the happiness and love in the world.
+Never forget how special and amazing you are ✨
+`;
+
+function openLetter(){
+
+document
+.getElementById('letterPopup')
+.style.display = 'flex';
+
+let j = 0;
+
+const target =
+document.getElementById('secretTypewriter');
+
+target.innerHTML = '';
+
+function secretType(){
+
+if(j < secretMessage.length){
+
+target.innerHTML +=
+secretMessage.charAt(j);
+
+j++;
+
+setTimeout(secretType,35);
+}
+}
+
+secretType();
+}
+
+function closeLetter(){
+
+document
+.getElementById('letterPopup')
+.style.display = 'none';
+}
+
+/* =========================
+FRIENDS
+========================= */
+
+function openFriendsMessage(){
+
+document
+.getElementById('friendsPopup')
+.style.display = 'flex';
+}
+
+function closeFriendsMessage(){
+
+document
+.getElementById('friendsPopup')
+.style.display = 'none';
+}
+
+/* =========================
+GALLERY
+========================= */
+
+function openGallery(){
+
+document
+.getElementById('popupGallery')
+.style.display = 'flex';
+}
+
+function closeGallery(){
+
+document
+.getElementById('popupGallery')
+.style.display = 'none';
+}
+
+/* =========================
+VIDEO
+========================= */
+
+function openVideo(){
+
+document
+.getElementById('videoPopup')
+.style.display = 'flex';
+
+document
+.getElementById('birthdayVideo')
+.play();
+}
+
+function closeVideo(){
+
+document
+.getElementById('videoPopup')
+.style.display = 'none';
+
+const video =
+document.getElementById('birthdayVideo');
+
+video.pause();
+
+video.currentTime = 0;
+}
+
+/* =========================
+GAME
+========================= */
+
+const gamePopup =
+document.getElementById('gamePopup');
+
+const canvas =
+document.getElementById('gameCanvas');
+
+const ctx =
+canvas.getContext('2d');
+
+let bird;
+let pipes;
+let score;
+let gravity;
+let gameRunning = false;
+let gameLoop;
+
+const birdImg = new Image();
+
+/* PALITAN MO ITO NG PICTURE NI ANICA */
+birdImg.src = "fionaa.png.png";
+
+function openGame(){
+
+gamePopup.style.display = 'flex';
+}
+
+function closeGame(){
+
+gamePopup.style.display = 'none';
+
+cancelAnimationFrame(gameLoop);
+
+gameRunning = false;
+}
+
+function startGame(){
+
+bird = {
+x:120,
+y:200,
+width:70,
+height:70,
+velocity:0
+};
+
+pipes = [];
+
+score = 0;
+
+gravity = 0.45;
+
+document.getElementById('score')
+.innerHTML = score;
+
+createPipe();
+
+gameRunning = true;
+
+updateGame();
+}
+
+function createPipe(){
+
+const gap = 170;
+
+const topHeight =
+Math.random() * 180 + 50;
+
+pipes.push({
+
+x:canvas.width,
+
+width:90,
+
+top:topHeight,
+
+bottom:
+canvas.height - topHeight - gap,
+
+passed:false
+});
+}
+
+function updateGame(){
+
+if(!gameRunning) return;
+
+ctx.clearRect(
+0,
+0,
+canvas.width,
+canvas.height
+);
+
+/* BIRD */
+
+bird.velocity += gravity;
+
+bird.y += bird.velocity;
+
+ctx.save();
+
+ctx.translate(
+bird.x + bird.width/2,
+bird.y + bird.height/2
+);
+
+ctx.rotate(bird.velocity * 0.03);
+
+ctx.drawImage(
+birdImg,
+-bird.width/2,
+-bird.height/2,
+bird.width,
+bird.height
+);
+
+ctx.restore();
+
+/* PIPES */
+
+pipes.forEach((pipe,index)=>{
+
+pipe.x -= 3;
+
+ctx.fillStyle = "#ff4f9a";
+
+ctx.fillRect(
+pipe.x,
+0,
+pipe.width,
+pipe.top
+);
+
+ctx.fillRect(
+pipe.x,
+canvas.height - pipe.bottom,
+pipe.width,
+pipe.bottom
+);
+
+if(
+!pipe.passed &&
+pipe.x + pipe.width < bird.x
+){
+
+pipe.passed = true;
+
+score++;
+
+document.getElementById('score')
+.innerHTML = score;
+}
+
+if(
+
+bird.x + bird.width > pipe.x &&
+bird.x < pipe.x + pipe.width &&
+(
+bird.y < pipe.top ||
+bird.y + bird.height >
+canvas.height - pipe.bottom
+)
+
+){
+
+gameOver();
+}
+
+if(pipe.x + pipe.width < 0){
+
+pipes.splice(index,1);
+}
+
+});
+
+if(
+pipes.length < 3 &&
+pipes[pipes.length-1].x < 450
+){
+
+createPipe();
+}
+
+if(
+bird.y + bird.height > canvas.height ||
+bird.y < 0
+){
+
+gameOver();
+}
+
+gameLoop =
+requestAnimationFrame(updateGame);
+}
+
+function flap(){
+
+if(!gameRunning) return;
+
+bird.velocity = -7.5;
+}
+
+canvas.addEventListener('click', flap);
+
+document.addEventListener('keydown',(e)=>{
+
+if(e.code === 'Space'){
+
+flap();
+}
+});
+
+function gameOver(){
+
+gameRunning = false;
+
+ctx.fillStyle =
+"rgba(0,0,0,0.5)";
+
+ctx.fillRect(
+0,
+0,
+canvas.width,
+canvas.height
+);
+
+ctx.fillStyle = "white";
+
+ctx.font =
+"bold 45px Poppins";
+
+ctx.textAlign = "center";
+
+ctx.fillText(
+"GAME OVER 💔",
+canvas.width/2,
+canvas.height/2 - 20
+);
+
+ctx.font =
+"25px Poppins";
+
+ctx.fillText(
+"Score: " + score,
+canvas.width/2,
+canvas.height/2 + 30
+);
+}
+
+/* =========================
+HEARTS
+========================= */
+
+function createHeart(){
+
+const heart =
+document.createElement('div');
+
+heart.classList.add('heart');
+
+const emojis =
+['💖','✨','🎉','🎂','🌸'];
+
+heart.innerHTML =
+emojis[Math.floor(Math.random() * emojis.length)];
+
+heart.style.left =
+Math.random() * 100 + 'vw';
+
+heart.style.fontSize =
+Math.random() * 18 + 15 + 'px';
+
+heart.style.animationDuration =
+Math.random() * 3 + 3 + 's';
+
+document.body.appendChild(heart);
+
+setTimeout(() => {
+
+heart.remove();
+
+},6000);
+}
+
+setInterval(createHeart,400);
+
+/* =========================
+STARS
+========================= */
+
+const stars =
+document.getElementById('stars');
+
+for(let s = 0; s < 120; s++){
+
+const star =
+document.createElement('div');
+
+star.classList.add('star');
+
+star.style.left =
+Math.random() * 100 + '%';
+
+star.style.top =
+Math.random() * 100 + '%';
+
+star.style.animationDelay =
+Math.random() * 5 + 's';
+
+stars.appendChild(star);
+}
+
+/* =========================
+CAKE SYSTEM
+========================= */
+
+const cake = document.querySelector('.cake');
+
+const candle =
+document.getElementById('candle');
+
+const flame =
+document.getElementById('flame');
+
+const birthdaySong =
+document.getElementById('birthdaySong');
+
+const songStatus =
+document.getElementById('songStatus');
+
+let musicStarted = false;
+let candleBlown = false;
+
+cake.addEventListener('click', () => {
+
+if(!musicStarted && !candleBlown){
+
+birthdaySong.play();
+
+songStatus.innerHTML =
+"🎵 Birthday song playing...";
+
+musicStarted = true;
+}
+});
+
+candle.addEventListener('click', (e) => {
+
+e.stopPropagation();
+
+if(musicStarted && !candleBlown){
+
+birthdaySong.pause();
+
+birthdaySong.currentTime = 0;
+
+flame.style.display = 'none';
+
+songStatus.innerHTML =
+"✨ Candle blown out";
+
+candleBlown = true;
+
+setTimeout(() => {
+
+alert('🎂 Make a birthday wish!');
+
+},500);
+}
+
+else if(candleBlown){
+
+flame.style.display = 'block';
+
+songStatus.innerHTML =
+"✨ Candle relit again";
+
+candleBlown = false;
+
+musicStarted = false;
+}
+});
+
+</script>
+
+</body>
+</html>
